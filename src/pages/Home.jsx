@@ -69,6 +69,7 @@ const Home = () => {
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit}>
+        <label>Enter Name</label>
         <Input
           type="text"
           name="name"
@@ -78,6 +79,7 @@ const Home = () => {
           required
         />
 
+        <label>Pick DOB</label>
         <DatePicker
           value={formData.datepicker}
           name="dob"
@@ -86,7 +88,7 @@ const Home = () => {
           required
         />
 
-        <p>Choose Gender</p>
+        <label>Choose Gender</label>
         <Radio.Group
           value={formData.gender}
           onChange={handleChange}
@@ -97,6 +99,7 @@ const Home = () => {
           <Radio value={"others"}>others</Radio>
         </Radio.Group>
 
+        <label>Enter Email</label>
         <Input
           type="email"
           value={formData.email}
@@ -106,6 +109,7 @@ const Home = () => {
           required
         />
 
+        <label>Select Location</label>
         <Select
           name="location"
           value={formData.location || undefined}

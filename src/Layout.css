@@ -1,9 +1,15 @@
-
+h1{
+  text-align: center;
+  font: 1.2em sans-serif;
+  background-color: rgb(165, 68, 255);
+  margin: 0;
+  padding-top: 7px;
+}
 .nav {
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(165, 68, 255);
-    padding: 20px;
+    padding: 10px;
     align-items: center; 
 }
 

@@ -7,6 +7,7 @@ const Layout = () => {
     <>
       <div className="app-container">
         <header>
+          <h1>Form-App</h1>
           <div className="nav">
             <NavLink className="navlink" to="/">
               Home
@@ -22,7 +23,7 @@ const Layout = () => {
         <main>
           <Outlet />
         </main>
-        <footer>Footer Content</footer>
+        <footer>Fill - Look Up - Analyse</footer>
       </div>
     </>
   );

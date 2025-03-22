@@ -27,7 +27,7 @@ const router = createBrowserRouter([
     ]
   }
 ], {
-  basename: "/Form-Application"
+  basename: "/Form-Application/"
 });
 
 createRoot(document.getElementById('root')).render(

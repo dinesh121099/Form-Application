@@ -29,7 +29,9 @@ const Stats = () => {
   ];
   const COLORS = ["#0088FE", "#FF8042", "#00C49F"];
 
-  for (let i = 0; i < list.length; i++) {
+  if(list.length)
+  {
+    for (let i = 0; i < list.length; i++) {
     if (list[i].gender == "male") {
       genderCounts[0].count = genderCounts[0].count + 1;
     } else if (list[i].gender == "female") {
@@ -47,7 +49,7 @@ const Stats = () => {
     } else {
       countryCounts[3].count = countryCounts[3].count + 1;
     }
-  }
+  }}
   //console.log(genderCounts, countryCounts);
 
   return (
