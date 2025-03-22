@@ -1,0 +1,39 @@
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(165, 68, 255);
+    padding: 20px;
+    align-items: center; 
+}
+
+.navlink {
+    color: black;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: background-color 0.5s , transform 0.5s ease;
+}
+
+.navlink:hover {
+    background-color: rgb(165, 68, 255);
+    transform: scale(1.05); 
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main{
+    flex: 1;
+    padding: 20px;
+  }
+  
+  footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+  }
