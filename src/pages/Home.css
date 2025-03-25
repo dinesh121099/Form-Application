@@ -23,3 +23,13 @@ label{
     margin: 0 0 -15px 0;
     color: #525252;
 }
+
+legend{
+  color: #525252;
+}
+fieldset{
+  color: #525252;
+  border-color: #dcdcdc;
+  border-style: solid;
+  border-image: none;
+}

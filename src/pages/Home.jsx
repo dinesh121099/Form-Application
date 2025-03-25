@@ -88,7 +88,8 @@ const Home = () => {
           required
         />
 
-        <label>Choose Gender</label>
+        <fieldset>
+        <legend>Choose Gender</legend>
         <Radio.Group
           value={formData.gender}
           onChange={handleChange}
@@ -98,6 +99,7 @@ const Home = () => {
           <Radio value={"female"}>Female</Radio>
           <Radio value={"others"}>others</Radio>
         </Radio.Group>
+        </fieldset>
 
         <label>Enter Email</label>
         <Input
