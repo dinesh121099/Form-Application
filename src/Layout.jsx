@@ -7,7 +7,7 @@ const Layout = () => {
     <>
       <div className="app-container">
         <header>
-          <h1>Form-App</h1>
+          <h1>DataFormX</h1>
           <div className="nav">
             <NavLink className="navlink" to="/">
               Home

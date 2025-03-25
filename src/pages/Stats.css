@@ -1,4 +1,8 @@
 .graph-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+}
+h3{
+    text-align: center;
 }

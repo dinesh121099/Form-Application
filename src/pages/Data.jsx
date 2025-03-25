@@ -19,7 +19,6 @@ const Data = () => {
   ];
 
   const onSelectChange = (selectedRowslist) => {
-    // console.log("selectedRowslist:",selectedRowslist);
     setSelectedRowKeys(selectedRowslist);
   };
 
@@ -28,13 +27,9 @@ const Data = () => {
       toast.error("Please select items to delete");
       return;
     }
-    for (let i = 0; i < selectedRowKeys.length; i++) {
-      let deleteIndex = selectedRowKeys[i];
-      list.splice(deleteIndex,1);
-    }
-
-    localStorage.setItem("formdata", JSON.stringify(list));
-    toast.success("Successfully Deleted");
+    let newList = list.filter((ele) => !(selectedRowKeys.includes(ele.id)));
+    localStorage.setItem("formdata", JSON.stringify(newList));
+    toast.success(`Successfully Deleted`);
     setSelectedRowKeys([]);
   };
 
